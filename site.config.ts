@@ -10,12 +10,13 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: "Nov's Blog",
+  name: "Nov's AI Blog",
   domain: 'nextjs-notion.furunov',
   author: 'FuruNov',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description:
+    'A blog about programming, mathematical optimization, and deep learning topics.',
 
   // social usernames (optional)
   twitter: 'nov_sin_k',
@@ -50,16 +51,16 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default',
-  // navigationStyle: 'custom',
+  // navigationStyle: 'default',
+  navigationStyle: 'custom',
   navigationLinks: [
     {
       title: 'About',
-      pageId: 'About-9bc626c37a2542919399e08d914703a4'
+      pageId: 'about-9bc626c37a2542919399e08d914703a4'
     },
     {
       title: 'Contact',
-      pageId: 'Contact-b020d3f7ec5c4a1e98d3c6e94a2ed2cc'
+      pageId: 'contact-b020d3f7ec5c4a1e98d3c6e94a2ed2cc'
     }
   ]
 })

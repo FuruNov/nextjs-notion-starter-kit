@@ -45,6 +45,7 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-docker.js'),
       import('prismjs/components/prism-java.js'),
       import('prismjs/components/prism-js-templates.js'),
+      import('prismjs/components/prism-julia.js'),
       import('prismjs/components/prism-coffeescript.js'),
       import('prismjs/components/prism-diff.js'),
       import('prismjs/components/prism-git.js'),
@@ -162,9 +163,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
       Modal,
       Tweet,
       Header: NotionPageHeader,
-      propertyLastEditedTimeValue,
       propertyTextValue,
-      propertyDateValue
+      propertyDateValue,
+      propertyLastEditedTimeValue,
     }),
     []
   )

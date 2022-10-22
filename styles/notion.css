@@ -25,6 +25,11 @@
   padding: 0.5em 2px;
 }
 
+.notion-list {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .notion-asset-caption {
   text-align: center;
 }
@@ -37,6 +42,15 @@
 .notion-asset-wrapper-video > div,
 .notion-asset-wrapper-video video {
   width: 100% !important;
+}
+
+.notion-header {
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  backdrop-filter: saturate(180%) blur(16px);
+}
+
+.dark-mode .notion-header {
+  background: var(--bg-color) !important;
 }
 
 .notion-header .notion-nav-header {
@@ -87,7 +101,7 @@
 
 .notion-collection-card-cover {
   border-radius: 16px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  box-shadow: 2px 2px 8px 4px rgba(15, 15, 64, 0.1);
 }
 
 .notion-collection-card-cover {
@@ -141,6 +155,9 @@
     padding-left: 2vw;
     padding-right: 2vw;
   }
+  .notion-header .breadcrumbs .active {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -164,17 +181,20 @@
 .notion-title {
   display: block;
   text-align: center;
+  text-shadow: 2px 2px 8px 4px rgba(15, 15, 64, 0.1);
 }
 
 .notion-collection-row {
   padding-bottom: 1em;
 }
 
-.notion-collection-page-properties .notion-collection-column-title {
+.notion-collection-page-properties
+.notion-collection-column-title {
   display: none;
 }
 
-.notion-collection-row-property .notion-property {
+.notion-collection-row-property
+.notion-property {
   display: flex;
   justify-content: center;
 }
@@ -186,6 +206,10 @@
   min-height: 23px;
 }
 
+.notion-collection-header {
+  display: none;
+}
+
 .notion-page-cover-wrapper,
 .notion-page-cover-wrapper span,
 .notion-page-cover-wrapper img {
@@ -194,7 +218,7 @@
 }
 
 .notion-page-cover-wrapper {
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  box-shadow: 2px 2px 8px 4px rgba(15, 15, 64, 0.1);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -345,7 +369,7 @@
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
-  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+  box-shadow: 0 8px 40px 0 rgb(0 0 64 / 21%);
 }
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {

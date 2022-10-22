@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+.dark-mode {
+  --bg-color: #002136;
+}
+
 .static-tweet blockquote {
   margin: 0;
   margin-block-start: 0;
